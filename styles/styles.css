@@ -1,0 +1,187 @@
+/* Import styles */
+
+
+/* NOTES / LINKS */
+
+
+/* Padding block: https://css-tricks.com/almanac/properties/p/padding-block/ */
+
+
+/* Barlow Semi Condensed */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+/* Custom Properties  */
+
+:root {
+    /* Primary */
+    --moderate-violet: hsl(263, 55%, 52%);
+    --v-dark-gray-blue: hsl(217, 19%, 35%);
+    --v-dark-black-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    /* Neatral */
+    --light-gray: hsl(0, 0%, 81%);
+    --light-gray-blue: hsl(210, 46%, 95%);
+}
+
+
+/* Resets */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray-blue);
+    /* prevent side scroll */
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* General Styles */
+
+
+/* Grid */
+
+.container {
+    display: grid;
+    gap: 1.8rem;
+    /* Set the container centre */
+    min-height: 100vh;
+    width: 75vw;
+    padding-block: 5rem;
+    margin-inline: auto;
+}
+
+
+/* Profile Description */
+
+img {
+    max-width: 100%;
+    display: block;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+h1 {
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+h2 {
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+
+/* flex to align name to picture */
+
+.flex {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.profile-desc {
+    margin-top: 1rem;
+}
+
+
+/* Review */
+
+.review-quote {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 600;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.review-description {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+
+/* Testominal styles */
+
+.testimonial {
+    /* width: 80%; */
+    /* t-r-b-l */
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 1rem;
+    font-family: 'Barlow Semi Condensed';
+    color: var(--white);
+    /* border: 1px solid black; */
+}
+
+.testimonial-one {
+    background-color: var(--moderate-violet);
+    grid-column: span 2;
+    background-image: url("../images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+}
+
+.testimonial-two {
+    background-color: var(--v-dark-gray-blue);
+}
+
+.testimonial-three {
+    background-color: var(--white);
+    color: var(--v-dark-black-blue);
+}
+
+.testimonial-four {
+    background-color: var(--v-dark-black-blue);
+}
+
+.testimonial-five {
+    background-color: var(--white);
+    color: var(--v-dark-black-blue);
+}
+
+
+/* Medium breakpoint */
+
+@media (min-width:80em) {
+    .container {
+        /* auto-fit gives us a fully responsive grid, auto-fit to the page size */
+        /* grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+        grid-auto-flow: dense; */
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .testimonial-four {
+        grid-column: span 2;
+    }
+    .testimonial-one {
+        grid-column: span 2;
+    }
+    .testimonial-five {
+        /* column needs to start at line 4 */
+        grid-column-start: 4;
+        /* row needs to start at line 1 and end at 3 */
+        grid-row: 1/3;
+    }
+}
+
+
+/* Small breakpoint */
+
+@media(max-width:50em) {
+    .testimonial-one {
+        grid-column: 1;
+    }
+}
