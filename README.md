@@ -12,7 +12,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 ## Overview
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://hk273.github.io/testimonial-grid/)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 ### What I learned
 
