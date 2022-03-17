@@ -32,7 +32,3 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 
 - [Padding Block](https://css-tricks.com/almanac/properties/p/padding-block/)
 
-## Author
-
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername))
-
