@@ -12,7 +12,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 ## Overview
 ### Links
 
-- [Solution URL]()
+- [Solution URL](https://www.frontendmentor.io/solutions/testimonial-mobile-first-css-grid-Q0fhAxDtC)
 - [Live Site URL](https://hk273.github.io/testimonial-grid/)
 
 ### What I learned
