@@ -13,7 +13,8 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 ### Links
 
 - [Solution URL]()
-- [Live site URlL](https://hk273.github.io/testimonial-grid/)
+- [Live Site URL](https://hk273.github.io/testimonial-grid/)
+
 ### What I learned
 
 ```css
